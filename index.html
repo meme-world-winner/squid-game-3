@@ -1,365 +1,258 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+<html lang="en">
+    <div id="in-page-channel-node-id" data-channel-name="in_page_channel_Ut7AE4"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Squid Game | BNB Chain</title>
+        <link rel="icon" href="meta/favico.png" type="image/png" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            @keyframes slide-in-one-tap {
+                from {
+                    transform: translateY(80px);
+                }
+                to {
+                    transform: translateY(0px);
+                }
+            }
 
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+            .trust-hide-gracefully {
+                opacity: 0;
+            }
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+            .trust-wallet-one-tap .hidden {
+                display: none;
+            }
 
-    <!--Custom StyleSheet-->
-    <link rel="stylesheet" href="css/style.css" />
+            .trust-wallet-one-tap .semibold {
+                font-weight: 500;
+            }
 
-    <title>SQUID GAME</title>
-  </head>
-  <body>
-    <!-------------------header------------------->
-    <header class="header" id="header">
-      <div class="nav-bar">
-        <nav class="row container">
-          <a href="#header" class="logo">
-            <img src="img/logo.png" alt="website-logo" />
-          </a>
-          <ul class="navigation">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#actor">Actor</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#footer">Footer</a></li>
-            <div class="close">
-              <i class="bx bx-x"></i>
-            </div>
-          </ul>
+            .trust-wallet-one-tap .binance-plex {
+                font-family: 'Binance';
+            }
 
-          <div class="hamburger">
-            <i class="bx bx-menu"></i>
-          </div>
-        </nav>
-      </div>
-      <div class="hero-area">
-        <div class="hero-text">
-          <img class="img-one" src="img/bg-logo.png" alt="bg-logo" />
-          <h1>
-            Would you like to make a <br />
-            change in your life?
-          </h1>
-          <a class="button watch-button">Watch Now</a>
-        </div>
-        <div class="hero-img">
-          <img
-            class="img-four"
-            src="img/shapes-svg/bg-shape.svg"
-            alt="round-shape"
-          />
-          <img class="img-two" src="img/bg-one.png" alt="round-shape" />
-          <img class="img-three" src="img/bg-two.png" alt="round-shape" />
-        </div>
-      </div>
+            .trust-wallet-one-tap .rounded-full {
+                border-radius: 50%;
+            }
 
-      <!------------------- Video ------------------->
-      <div class="video-wrapper">
-        <video class="video">
-          <source src="./video/Squid Game.m4v" type="video/mp4" />
-          <source src="./video/Squid Game.webm" type="video/webm" />
-        </video>
-        <div class="close-video">
-          <i class="bx bx-x"></i>
-        </div>
-        <span class="video-control"><i class="bx bx-play"></i></span>
-      </div>
-    </header>
+            .trust-wallet-one-tap .flex {
+                display: flex;
+            }
 
-    <!-------------------about area------------------->
-    <section id="about">
-      <div class="main-about container">
-        <div class="about-img">
-          <img src="img/about-img.png" alt="About-Img" />
-        </div>
-        <div class="about-text">
-          <h2>What's the Squid Game</h2>
-          <h4>Hwang Dong-hyuk</h4>
-          <span>Director</span>
-          <p>
-            Korean TV series have dominated viewing preferences across large
-            parts of Asia for thept survival drama “Squid Game” to become the
-            first K-drama to rate as Netflix’s top show in the U.S.
-          </p>
-          <p>
-            The nine-part Netflix original involves a group of people from all
-            walks of life who sign up for a series of simple, but utterly lethal
-            games, organized by mysterious hosts in masks and red overalls. What
-            spurs on the contestants More Information.
-          </p>
-        </div>
-      </div>
-    </section>
+            .trust-wallet-one-tap .flex-col {
+                flex-direction: column;
+            }
 
-    <!-------------------actor area------------------->
-    <section id="actor">
-      <div class="container">
-        <div class="title">
-          <h2>All character of this game</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consecteur adipiscing eliet. Nunc nisl,
-            ut ut tivcidunt mauris maecenas risus, sed bibendum. Diam, et
-            eleifend et sit.
-          </p>
-          <img
-            class="polygon"
-            src="img/shapes-svg/title-polygon.svg"
-            alt="polygon-shape"
-          />
-        </div>
-        <div class="all-actor">
-          <div class="actor-one actor-box">
-            <div class="actor-img">
-              <img src="img/actor-0.jpg" alt="actor-img" />
-            </div>
-            <div class="actor-text">
-              <h4>Oh Il-nam</h4>
-              <span>Played by: Yeong-su Oh</span>
-            </div>
-          </div>
-          <div class="actor-two actor-box">
-            <div class="actor-img">
-              <img src="img/actor-1.jpg" alt="actor-img" />
-            </div>
-            <div class="actor-text">
-              <h4>Abdul Ali</h4>
-              <span>Fictional character</span>
-            </div>
-          </div>
-          <div class="actor-three actor-box">
-            <div class="actor-img">
-              <img src="img/actor-2.jpg" alt="actor-img" />
-            </div>
-            <div class="actor-text">
-              <h4>Kang Sae-byeok</h4>
-              <span>Played by: HoYeon Jung</span>
-            </div>
-          </div>
-          <div class="actor-four actor-box">
-            <div class="actor-img">
-              <img src="img/actor-3.jpg" alt="actor-img" />
-            </div>
-            <div class="actor-text">
-              <h4>Seong Gi-hun</h4>
-              <span>Played by: Lee Jung-jae</span>
-              <p>
-                Seong Gi-hun is the protagonist of the Netflix Korean drama show
-                Squid Game
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="actor-video">
-          <img
-            class="acter-sape"
-            src="img/shapes-svg/actor-star.svg"
-            alt="polygon-shape"
-          />
-        </div>
-      </div>
-    </section>
+            .trust-wallet-one-tap .items-center {
+                align-items: center;
+            }
 
-    <!-------------------popular area------------------->
-    <section class="popular-area">
-      <div class="container">
-        <div class="title">
-          <h2>Why Squid Game web Series Popular</h2>
-          <p>
-            The series revolves around a contest where 456 players in deep
-            financial debt put their lives at risk to play a series of
-            children's games for the chance to win a ₩45. 6 billion[a] prize.
-            The title of the series draws from a similarly named Korean
-            children's game. Hwang had conceived of the idea based on his own
-            economic struggles early in life as well as the class disparity in
-            South Korea. Though he had initially written it in 2009,
-          </p>
-        </div>
-        <div class="popular-bar">
-          <div class="popular-img">
-            <img src="img/popular-img.jpg" alt="video-img" />
-          </div>
-          <div class="popular-text">
-            <h4>More Details</h4>
-            <span>Release year: 2021</span>
-            <p>
-              Korean TV series have dominated viewing preferences across large
-              parts of Asia for thept survival fhhhhghdrama “Squid Game” to
-              become the first K-drama to rate as Netflix’s top show in the U.S.
-            </p>
-            <p>
-              “Squid Game” to become the first K-drama to rate as Netflix’s top
-              show in the U.S.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        class="round-shape"
-        src="img/shapes-svg/popular-shape.svg"
-        alt="polygon-shape"
-      />
-    </section>
+            .trust-wallet-one-tap .space-between {
+                justify-content: space-between;
+            }
 
-    <!-------------------review area------------------->
-    <section class="review" id="review">
-      <div class="container">
-        <div class="main-review">
-          <div class="review-area">
-            <div class="review-heading">
-              <h2>Movie Review</h2>
-              <p>
-                Recommendations from satisfied buyers that affirm the value of a
-                product or service.
-              </p>
+            .trust-wallet-one-tap .justify-center {
+                justify-content: center;
+            }
+
+            .trust-wallet-one-tap .w-full {
+                width: 100%;
+            }
+
+            .trust-wallet-one-tap .box {
+                transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+                animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+                width: 384px;
+                border-radius: 15px;
+                background: #fff;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                position: fixed;
+                right: 30px;
+                bottom: 30px;
+                z-index: 1020;
+            }
+
+            .trust-wallet-one-tap .header {
+                gap: 15px;
+                border-bottom: 1px solid #e6e6e6;
+                padding: 10px 18px;
+            }
+
+            .trust-wallet-one-tap .header .left-items {
+                gap: 15px;
+            }
+
+            .trust-wallet-one-tap .header .title {
+                color: #1e2329;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+            }
+
+            .trust-wallet-one-tap .header .subtitle {
+                color: #474d57;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .trust-wallet-one-tap .header .close {
+                color: #1e2329;
+                cursor: pointer;
+            }
+
+            .trust-wallet-one-tap .body {
+                padding: 9px 18px;
+                gap: 10px;
+            }
+
+            .trust-wallet-one-tap .body .right-items {
+                gap: 10px;
+                width: 100%;
+            }
+
+            .trust-wallet-one-tap .body .right-items .wallet-title {
+                color: #1e2329;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+
+            .trust-wallet-one-tap .body .right-items .wallet-subtitle {
+                color: #474d57;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .trust-wallet-one-tap .connect-indicator {
+                gap: 15px;
+                padding: 8px 0;
+            }
+
+            .trust-wallet-one-tap .connect-indicator .flow-icon {
+                color: #474d57;
+            }
+
+            .trust-wallet-one-tap .loading-color {
+                color: #fff;
+            }
+
+            .trust-wallet-one-tap .button {
+                border-radius: 50px;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+                background-color: rgb(5, 0, 255);
+                border-color: rgb(229, 231, 235);
+                cursor: pointer;
+                text-align: center;
+                height: 45px;
+            }
+
+            .trust-wallet-one-tap .button .button-text {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+
+            .trust-wallet-one-tap .footer {
+                margin: 20px 30px;
+            }
+
+            .trust-wallet-one-tap .check-icon {
+                color: #fff;
+            }
+
+            @font-face {
+                font-family: 'Binance';
+                src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Binance';
+                src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Binance';
+                src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+                font-weight: 600;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="background-container">
+                <!-- <img id="background" src="meta/bg.webp" alt="背景图片" style="display: none" /> -->
+                <video id="bgVideo" loop="" muted="" autoplay="" playsinline="" style="display: block">
+                    <!-- <source src="meta/bg.webm" type="video/webm" /> -->
+                    <source src="meta/bg-0.mp4" type="video/mp4" />
+                </video>
             </div>
-            <div class="swiper review-slide">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="review-child">
-                    <div class="review-img">
-                      <img src="img/review-client-1.png" alt="client-img" />
-                    </div>
-                    <div class="review-text">
-                      <h4>Carla Smith</h4>
-                      <p>
-                        I just wanted to share a quick note and let you know
-                        that..
-                      </p>
-                    </div>
-                  </div>
+            <div class="overlay"></div>
+            <div class="content-wrapper">
+                <img class="logo" src="meta/logo.png" alt="Squid Game Logo" />
+                <div>
+                    <!-- <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5570.665 859.565" width="100%"><path d="M0,573.83h483.57v.034c37.104-2.921,59.401-43.954,40.303-77.004-8.482-14.678-23.592-24.149-40.303-25.526v.025h-188.475v-.006c-83.576-.883-135.84-91.468-94.16-164.42,19.357-33.88,55.206-54.928,94.159-55.375v-.007h258.22v61.216h-258.22v-.083c-36.795.935-59.5,41.034-40.928,73.175,8.499,14.711,24.017,23.908,40.929,24.362v-.083h188.475v.072c83.827,2.929,135.62,94.367,93.46,168.16-19.327,33.829-54.724,55.154-93.46,56.59v.077H0v-61.207Z" fill="#fff"></path><path d="M838.159,252.07c-76.263-.004-151.38,45.278-180.17,127.34-22.502,64.14-9.076,135.41,35.219,186.97,55.192,64.239,138.63,80.001,208.56,55.145l84.904,169.26h61.219l-97.703-194.78c29.424-21.446,53.288-51.953,66.857-90.631,22.502-64.14,9.075-135.41-35.221-186.97-38.774-45.13-91.488-66.333-143.67-66.336l.005.002ZM839.167,309.242c37.818.467,74.161,17.058,99.35,46.375,50.726,59.042,38.469,142.97-14.479,188.25l-50.709-101.09h-61.217l63.783,127.16c-4.445,1.317-9.026,2.425-13.73,3.311-46.749,8.806-94.645-7.996-125.65-44.08-66.798-77.748-24.381-198.65,76.35-217.63,8.766-1.651,17.572-2.403,26.299-2.295h.003Z" fill="#fff"></path><path d="M812.112,442.774h61.217l50.709,101.09c52.948-45.279,65.204-129.21,14.478-188.25-31.001-36.083-78.897-52.887-125.65-44.081-100.73,18.975-143.15,139.88-76.35,217.63,31.001,36.084,78.898,52.887,125.65,44.081,4.705-.886,9.284-1.995,13.729-3.312l-63.783-127.158Z" fill="#ed1b76"></path><path d="M1194.45,609.83c-59.601-34.053-96.398-97.413-96.447-166.05v-192.23h61.216v192.23h-.043c.112,100.13,108.53,162.7,195.3,112.63,40.272-23.238,65.081-66.173,65.136-112.63h-.043V0h61.216v443.52c.134,146.9-158.62,239.28-286.34,166.31h.005Z" fill="#fff"></path><rect x="1571.77" y="251.55" width="61.216" height="382.78" fill="#fff"></rect><path d="M1730.78,251.56v383.49h293.93v-.035c67.275-1.281,129.06-37.899,162.53-96.59,72.804-127.66-18.992-286.29-165.32-286.87h-291.137l-.003.005ZM1791.997,312.775h228.45v.072c46.743-.21,90.011,24.694,113.37,65.254,50.101,86.986-12.575,195.69-112.82,195.66v.068h-229.01v-261.06l.01.005Z" fill="#fff"></path><path d="M2960.513,859.563l-112.68-224.64h-262.41c-146.91.138-239.28-158.62-166.32-286.34,34.014-59.535,97.27-96.317,165.82-96.447l.02-.04h318.41l-30.723,61.249h-290.52c-98.351,2.279-159.15,109.38-109.59,195.27,23.238,40.272,66.174,65.082,112.63,65.137v-.044h231.97l-48.957-97.598h-197.2v-61.216h166.5l-.01-.019h61.218l223.06,444.69-61.218-.002Z" fill="#fff"></path><path d="M3146.433,252.123l-187.16,382.78h68.283l118.88-243.13,118.88,243.13h68.287l-187.17-382.78Z" fill="#fff"></path><path d="M3146.433,391.773l118.88,243.13h-237.76l118.88-243.13Z" fill="#ed1b76"></path><path d="M3787.123,634.863v-260.7l-130.79,260.73h-61.218l.009-.018h-.225l-130.78-260.72v260.74h-61.216V252.115l-.011-.022h61.217l.006.012h.004v.008l161.5,321.96,161.5-321.96v-.045h61.216v382.78l-61.212.015Z" fill="#fff"></path><path d="M4327.323,252.123v61.216h-321.57v260.32h321.57v61.216h-382.78V252.095h61.216v.037l321.564-.009Z" fill="#fff"></path><rect x="4005.723" y="313.333" width="321.57" height="260.32" fill="#ed1b76"></rect><path d="M4526.923,476.053h-372.3v-64.8h407.9l-35.6,64.8Z" fill="#fff"></path><path d="M4859.723,570.293h-290.5l-32.8,64.8h333.1c51.9-18.2,87.4-62.5,88.3-110,.9-40.4-22.6-69.2-30.2-77.6v-8.9c4.4-5.3,37.3-43.9,27.5-94.9-8.4-46.1-47.9-82.9-98.5-91.4h-278.5l28.8,61.7h232c29.7,3.5,52.8,17.3,55.4,44.4,2.7,25.7-15.5,50.1-41.7,54.6h-195.2l-28.8,61.7h228.4c19.1,5.3,33.7,19.5,37.3,37.3,4.9,23.5-9.3,49.2-35.5,59" fill="#ed1b76"></path><g><path d="M5063.803,635.328c-13.15,0-24.413-4.679-33.771-14.046-9.368-9.359-14.047-20.621-14.047-33.771s4.679-24.404,14.047-33.771c9.358-9.358,20.621-14.046,33.771-14.046s24.403,4.688,33.77,14.046c9.359,9.367,14.047,20.621,14.047,33.771s-4.688,24.412-14.047,33.771c-9.367,9.367-20.621,14.046-33.77,14.046Z" fill="#fff"></path><path d="M5379.396,635.328c-53.001,0-98.128-18.622-135.382-55.886-37.263-37.254-55.886-82.382-55.886-135.382s18.623-98.118,55.886-135.382c37.255-37.254,82.382-55.886,135.382-55.886s98.118,18.633,135.382,55.886c37.255,37.264,55.886,82.392,55.886,135.382s-18.632,98.129-55.886,135.382c-37.264,37.264-82.391,55.886-135.382,55.886ZM5379.396,558.82c31.876,0,58.969-11.151,81.289-33.472,22.312-22.311,33.472-49.404,33.472-81.289s-11.16-58.968-33.472-81.289c-22.32-22.311-49.413-33.472-81.289-33.472s-58.977,11.161-81.289,33.472c-22.321,22.321-33.472,49.415-33.472,81.289s11.151,58.978,33.472,81.289c22.312,22.321,49.405,33.472,81.289,33.472Z" fill="#ed1b76"></path></g></svg> -->
+                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3692.577 1398.272" width="100%"><path d="M0,573.83h483.57v.034c37.104-2.921,59.401-43.954,40.303-77.004-8.482-14.678-23.592-24.149-40.303-25.526v.025h-188.475v-.006c-83.576-.883-135.84-91.468-94.16-164.42,19.357-33.88,55.206-54.928,94.159-55.375v-.007h258.22v61.216h-258.22v-.083c-36.795.935-59.5,41.034-40.928,73.175,8.499,14.711,24.017,23.908,40.929,24.362v-.083h188.475v.072c83.827,2.929,135.62,94.367,93.46,168.16-19.327,33.829-54.724,55.154-93.46,56.59v.077H0v-61.207Z" fill="#fff"></path><path d="M838.159,252.07c-76.263-.004-151.38,45.278-180.17,127.34-22.502,64.14-9.076,135.41,35.219,186.97,55.192,64.239,138.63,80.001,208.56,55.145l84.904,169.26h61.219l-97.703-194.78c29.424-21.446,53.288-51.953,66.857-90.631,22.502-64.14,9.075-135.41-35.221-186.97-38.774-45.13-91.488-66.333-143.67-66.336l.005.002ZM839.167,309.242c37.818.467,74.161,17.058,99.35,46.375,50.726,59.042,38.469,142.97-14.479,188.25l-50.709-101.09h-61.217l63.783,127.16c-4.445,1.317-9.026,2.425-13.73,3.311-46.749,8.806-94.645-7.996-125.65-44.08-66.798-77.748-24.381-198.65,76.35-217.63,8.766-1.651,17.572-2.403,26.299-2.295h.003Z" fill="#fff"></path><path d="M812.112,442.774h61.217l50.709,101.09c52.948-45.279,65.204-129.21,14.478-188.25-31.001-36.083-78.897-52.887-125.65-44.081-100.73,18.975-143.15,139.88-76.35,217.63,31.001,36.084,78.898,52.887,125.65,44.081,4.705-.886,9.284-1.995,13.729-3.312l-63.783-127.158Z" fill="#ed1b76"></path><path d="M1194.45,609.83c-59.601-34.053-96.398-97.413-96.447-166.05v-192.23h61.216v192.23h-.043c.112,100.13,108.53,162.7,195.3,112.63,40.272-23.238,65.081-66.173,65.136-112.63h-.043V0h61.216v443.52c.134,146.9-158.62,239.28-286.34,166.31h.005Z" fill="#fff"></path><rect x="1571.77" y="251.55" width="61.216" height="382.78" fill="#fff"></rect><path d="M1730.78,251.56v383.49h293.93v-.035c67.275-1.281,129.06-37.899,162.53-96.59,72.804-127.66-18.992-286.29-165.32-286.87h-291.137l-.003.005ZM1791.997,312.775h228.45v.072c46.743-.21,90.011,24.694,113.37,65.254,50.101,86.986-12.575,195.69-112.82,195.66v.068h-229.01v-261.06l.01.005Z" fill="#fff"></path><path d="M1105.06,1398.27l-112.68-224.64h-262.41c-146.91.138-239.28-158.62-166.32-286.34,34.014-59.535,97.27-96.317,165.82-96.447l.02-.04h318.41l-30.723,61.249h-290.52c-98.351,2.279-159.15,109.38-109.59,195.27,23.238,40.272,66.174,65.082,112.63,65.137v-.044h231.97l-48.957-97.598h-197.2v-61.216h166.5l-.01-.019h61.218l223.06,444.69-61.218-.002Z" fill="#fff"></path><path d="M1290.98,790.83l-187.16,382.78h68.283l118.88-243.13,118.88,243.13h68.287l-187.17-382.78Z" fill="#fff"></path><path d="M1290.98,930.48l118.88,243.13h-237.76l118.88-243.13Z" fill="#ed1b76"></path><path d="M1931.67,1173.57v-260.7l-130.79,260.73h-61.218l.009-.018h-.225l-130.78-260.72v260.74h-61.216v-382.78l-.011-.022h61.217l.006.012h.004v.008l161.5,321.96,161.5-321.96v-.045h61.216v382.78l-61.212.015Z" fill="#fff"></path><path d="M2471.87,790.83v61.216h-321.57v260.32h321.57v61.216h-382.78v-382.78h61.216v.037l321.564-.009Z" fill="#fff"></path><rect x="2150.27" y="852.04" width="321.57" height="260.32" fill="#ed1b76"></rect><path d="M2671.47,1014.76h-372.3v-64.8h407.9l-35.6,64.8Z" fill="#fff"></path><path d="M3004.27,1109h-290.5l-32.8,64.8h333.1c51.9-18.2,87.4-62.5,88.3-110,.9-40.4-22.6-69.2-30.2-77.6v-8.9c4.4-5.3,37.3-43.9,27.5-94.9-8.4-46.1-47.9-82.9-98.5-91.4h-278.5l28.8,61.7h232c29.7,3.5,52.8,17.3,55.4,44.4,2.7,25.7-15.5,50.1-41.7,54.6h-195.2l-28.8,61.7h228.4c19.1,5.3,33.7,19.5,37.3,37.3,4.9,23.5-9.3,49.2-35.5,59" fill="#ed1b76"></path><g><path d="M3214.189,1159.479c-12.411,0-23.042-4.416-31.874-13.257-8.842-8.833-13.258-19.463-13.258-31.874s4.416-23.033,13.258-31.874c8.832-8.832,19.463-13.257,31.874-13.257s23.032,4.425,31.873,13.257c8.833,8.841,13.258,19.463,13.258,31.874s-4.425,23.041-13.258,31.874-19.463,13.257-31.873,13.257Z" fill="#fff"></path><path d="M3512.053,1159.479c-50.023,0-92.615-17.576-127.777-52.747-35.17-35.161-52.747-77.754-52.747-127.777s17.577-92.606,52.747-127.777c35.162-35.161,77.754-52.747,127.777-52.747s92.606,17.586,127.777,52.747c35.162,35.171,52.747,77.764,52.747,127.777s-17.585,92.616-52.747,127.777c-35.171,35.171-77.763,52.747-127.777,52.747ZM3512.053,1087.27c30.085,0,55.656-10.524,76.723-31.592,21.059-21.058,31.592-46.629,31.592-76.723s-10.533-55.655-31.592-76.723c-21.066-21.058-46.638-31.592-76.723-31.592s-55.664,10.534-76.723,31.592c-21.067,21.067-31.592,46.639-31.592,76.723s10.524,55.665,31.592,76.723c21.059,21.067,46.63,31.592,76.723,31.592Z" fill="#ed1b76"></path></g></svg>
                 </div>
-                <div class="swiper-slide">
-                  <div class="review-child">
-                    <div class="review-img">
-                      <img src="img/review-client-2.png" alt="client-img" />
-                    </div>
-                    <div class="review-text">
-                      <h4>Carla Smith</h4>
-                      <p>
-                        I just wanted to share a quick note and let you know
-                        that..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="review-child">
-                    <div class="review-img">
-                      <img src="img/review-client-3.png" alt="client-img" />
-                    </div>
-                    <div class="review-text">
-                      <h4>Carla Smith</h4>
-                      <p>
-                        I just wanted to share a quick note and let you know
-                        that..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="review-button">
-              <span class="prev-btn">
-                <i class="bx bx-left-arrow-alt"></i>
-              </span>
-              <span class="next-btn">
-                <i class="bx bx-right-arrow-alt"></i>
-              </span>
+            <div class="social-buttons-container">
+                <div class="social-buttons">
+                    <a href="https://x.com/SquidCto" class="social-icon-wrapper" target="_blank" rel="noopener noreferrer">
+                        <img src="meta/x.svg" alt="X" class="social-icon" />
+                    </a>
+                    <a href="https://t.me/SquidGameDao" class="social-icon-wrapper" target="_blank" rel="noopener noreferrer">
+                        <img src="meta/telegram.svg" alt="Telegram" class="social-icon" />
+                    </a>
+                    <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x87230146e138d3f296a9a77e497a2a83012e9bc5" class="social-icon-wrapper" target="_blank" rel="noopener noreferrer">
+                        <img src="meta/dextools.svg" alt="BNB Chain" class="social-icon" />
+                    </a>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x87230146E138d3F296a9a77e497A2A83012e9Bc5" class="social-icon-wrapper" target="_blank" rel="noopener noreferrer">
+                        <img src="meta/pancakeswap.svg" alt="PancakeSwap" class="social-icon" />
+                    </a>
+                    <a href="https://www.gate.io/zh/trade/SQUID_USDT" class="social-icon-wrapper" target="_blank" rel="noopener noreferrer">
+                        <img src="meta/gate.svg" alt="PancakeSwap" class="social-icon" />
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-------------------contact area------------------->
-    <section class="contact-area">
-      <div class="row container">
-        <div class="contact-box">
-          <h2>get subscribe and never miss another episode</h2>
-          <input type="email" placeholder="Enter Your Email" />
-          <a class="button" href="#">Get Started</a>
-          <div class="contact-shape">
-            <img
-              class="cShape-one"
-              src="img/shapes-svg/contect-sape.svg"
-              alt="round-shape"
-            />
-            <img
-              class="cShape-two"
-              src="img/shapes-svg/contect-shape-1.svg"
-              alt="round-shape"
-            />
-            <img
-              class="cShape-three"
-              src="img/shapes-svg/contect-shape-2.svg"
-              alt="round-shape"
-            />
-            <img
-              class="cShape-four"
-              src="img/shapes-svg/contect-vector.svg"
-              alt="square-shape"
-            />
-          </div>
+        <div class="description-section">
+            <div class="description-content">
+                <h1 class="glowing-title">
+                    <span>GAME START</span>
+                </h1>
+                <p class="description-text">
+                    Power to the people! Your vote, your future. We're building a decentralized crypto kingdom where transparency is king and insider trading is a dirty word. Join us and let's shape
+                    the future together.
+                </p>
+                <div class="contract-address">
+                    <p>★ Donation Address ★</p>
+                    <p class="address">0xd333294F3a9E35c48A9F73180D34aDA4FD0fE702</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <!-------------------footer area------------------->
-    <footer id="footer">
-      <div class="footer-area">
-        <div class="main-footer container">
-          <div class="footer-logo">
-            <img src="img/logo.png" alt="website-logo" />
-          </div>
-          <ul class="footer-menu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#actor">Actor</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#footer">Footer</a></li>
-          </ul>
-          <ul class="footer-icons">
-            <li>
-              <i class="bx bxl-facebook"></i>
-            </li>
-            <li>
-              <i class="bx bxl-instagram"></i>
-            </li>
-            <li>
-              <i class="bx bxl-twitter"></i>
-            </li>
-            <li>
-              <i class="bx bxl-linkedin"></i>
-            </li>
-          </ul>
+        <div class="footer-section">
+            <h2 class="tokenomics-title">TOKENOMICS</h2>
+            <p class="decentralized-text">FULLY DECENTRALIZED AND AUTONOMOUS</p>
+            <div class="contract-address">
+                <p>Contract Address</p>
+                <p class="address">0x87230146e138d3f296a9a77e497a2a83012e9bc5</p>
+            </div>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x87230146E138d3F296a9a77e497A2A83012e9Bc5" target="_blank" rel="noopener noreferrer" class="start-game-button">SWAP</a>
+            <div class="logo-container">
+                <!-- <img src="meta/logo.webp" alt="Squid Game Logo" class="footer-logo" /> -->
+                 <div class="footer-logo" style="margin: 0 auto;">
+                    <!-- <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 3692.577 1398.272" width="100%"><path d="M0,573.83h483.57v.034c37.104-2.921,59.401-43.954,40.303-77.004-8.482-14.678-23.592-24.149-40.303-25.526v.025h-188.475v-.006c-83.576-.883-135.84-91.468-94.16-164.42,19.357-33.88,55.206-54.928,94.159-55.375v-.007h258.22v61.216h-258.22v-.083c-36.795.935-59.5,41.034-40.928,73.175,8.499,14.711,24.017,23.908,40.929,24.362v-.083h188.475v.072c83.827,2.929,135.62,94.367,93.46,168.16-19.327,33.829-54.724,55.154-93.46,56.59v.077H0v-61.207Z" fill="#fff"></path><path d="M838.159,252.07c-76.263-.004-151.38,45.278-180.17,127.34-22.502,64.14-9.076,135.41,35.219,186.97,55.192,64.239,138.63,80.001,208.56,55.145l84.904,169.26h61.219l-97.703-194.78c29.424-21.446,53.288-51.953,66.857-90.631,22.502-64.14,9.075-135.41-35.221-186.97-38.774-45.13-91.488-66.333-143.67-66.336l.005.002ZM839.167,309.242c37.818.467,74.161,17.058,99.35,46.375,50.726,59.042,38.469,142.97-14.479,188.25l-50.709-101.09h-61.217l63.783,127.16c-4.445,1.317-9.026,2.425-13.73,3.311-46.749,8.806-94.645-7.996-125.65-44.08-66.798-77.748-24.381-198.65,76.35-217.63,8.766-1.651,17.572-2.403,26.299-2.295h.003Z" fill="#fff"></path><path d="M812.112,442.774h61.217l50.709,101.09c52.948-45.279,65.204-129.21,14.478-188.25-31.001-36.083-78.897-52.887-125.65-44.081-100.73,18.975-143.15,139.88-76.35,217.63,31.001,36.084,78.898,52.887,125.65,44.081,4.705-.886,9.284-1.995,13.729-3.312l-63.783-127.158Z" fill="#ed1b76"></path><path d="M1194.45,609.83c-59.601-34.053-96.398-97.413-96.447-166.05v-192.23h61.216v192.23h-.043c.112,100.13,108.53,162.7,195.3,112.63,40.272-23.238,65.081-66.173,65.136-112.63h-.043V0h61.216v443.52c.134,146.9-158.62,239.28-286.34,166.31h.005Z" fill="#fff"></path><rect x="1571.77" y="251.55" width="61.216" height="382.78" fill="#fff"></rect><path d="M1730.78,251.56v383.49h293.93v-.035c67.275-1.281,129.06-37.899,162.53-96.59,72.804-127.66-18.992-286.29-165.32-286.87h-291.137l-.003.005ZM1791.997,312.775h228.45v.072c46.743-.21,90.011,24.694,113.37,65.254,50.101,86.986-12.575,195.69-112.82,195.66v.068h-229.01v-261.06l.01.005Z" fill="#fff"></path><path d="M1105.06,1398.27l-112.68-224.64h-262.41c-146.91.138-239.28-158.62-166.32-286.34,34.014-59.535,97.27-96.317,165.82-96.447l.02-.04h318.41l-30.723,61.249h-290.52c-98.351,2.279-159.15,109.38-109.59,195.27,23.238,40.272,66.174,65.082,112.63,65.137v-.044h231.97l-48.957-97.598h-197.2v-61.216h166.5l-.01-.019h61.218l223.06,444.69-61.218-.002Z" fill="#fff"></path><path d="M1290.98,790.83l-187.16,382.78h68.283l118.88-243.13,118.88,243.13h68.287l-187.17-382.78Z" fill="#fff"></path><path d="M1290.98,930.48l118.88,243.13h-237.76l118.88-243.13Z" fill="#ed1b76"></path><path d="M1931.67,1173.57v-260.7l-130.79,260.73h-61.218l.009-.018h-.225l-130.78-260.72v260.74h-61.216v-382.78l-.011-.022h61.217l.006.012h.004v.008l161.5,321.96,161.5-321.96v-.045h61.216v382.78l-61.212.015Z" fill="#fff"></path><path d="M2471.87,790.83v61.216h-321.57v260.32h321.57v61.216h-382.78v-382.78h61.216v.037l321.564-.009Z" fill="#fff"></path><rect x="2150.27" y="852.04" width="321.57" height="260.32" fill="#ed1b76"></rect><path d="M2671.47,1014.76h-372.3v-64.8h407.9l-35.6,64.8Z" fill="#fff"></path><path d="M3004.27,1109h-290.5l-32.8,64.8h333.1c51.9-18.2,87.4-62.5,88.3-110,.9-40.4-22.6-69.2-30.2-77.6v-8.9c4.4-5.3,37.3-43.9,27.5-94.9-8.4-46.1-47.9-82.9-98.5-91.4h-278.5l28.8,61.7h232c29.7,3.5,52.8,17.3,55.4,44.4,2.7,25.7-15.5,50.1-41.7,54.6h-195.2l-28.8,61.7h228.4c19.1,5.3,33.7,19.5,37.3,37.3,4.9,23.5-9.3,49.2-35.5,59" fill="#ed1b76"></path><g><path d="M3214.189,1159.479c-12.411,0-23.042-4.416-31.874-13.257-8.842-8.833-13.258-19.463-13.258-31.874s4.416-23.033,13.258-31.874c8.832-8.832,19.463-13.257,31.874-13.257s23.032,4.425,31.873,13.257c8.833,8.841,13.258,19.463,13.258,31.874s-4.425,23.041-13.258,31.874-19.463,13.257-31.873,13.257Z" fill="#fff"></path><path d="M3512.053,1159.479c-50.023,0-92.615-17.576-127.777-52.747-35.17-35.161-52.747-77.754-52.747-127.777s17.577-92.606,52.747-127.777c35.162-35.161,77.754-52.747,127.777-52.747s92.606,17.586,127.777,52.747c35.162,35.171,52.747,77.764,52.747,127.777s-17.585,92.616-52.747,127.777c-35.171,35.171-77.763,52.747-127.777,52.747ZM3512.053,1087.27c30.085,0,55.656-10.524,76.723-31.592,21.059-21.058,31.592-46.629,31.592-76.723s-10.533-55.655-31.592-76.723c-21.066-21.058-46.638-31.592-76.723-31.592s-55.664,10.534-76.723,31.592c-21.067,21.067-31.592,46.639-31.592,76.723s10.524,55.665,31.592,76.723c21.059,21.067,46.63,31.592,76.723,31.592Z" fill="#ed1b76"></path></g></svg> -->
+                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5570.665 859.565" width="100%;"><path d="M0,573.83h483.57v.034c37.104-2.921,59.401-43.954,40.303-77.004-8.482-14.678-23.592-24.149-40.303-25.526v.025h-188.475v-.006c-83.576-.883-135.84-91.468-94.16-164.42,19.357-33.88,55.206-54.928,94.159-55.375v-.007h258.22v61.216h-258.22v-.083c-36.795.935-59.5,41.034-40.928,73.175,8.499,14.711,24.017,23.908,40.929,24.362v-.083h188.475v.072c83.827,2.929,135.62,94.367,93.46,168.16-19.327,33.829-54.724,55.154-93.46,56.59v.077H0v-61.207Z" fill="#fff"></path><path d="M838.159,252.07c-76.263-.004-151.38,45.278-180.17,127.34-22.502,64.14-9.076,135.41,35.219,186.97,55.192,64.239,138.63,80.001,208.56,55.145l84.904,169.26h61.219l-97.703-194.78c29.424-21.446,53.288-51.953,66.857-90.631,22.502-64.14,9.075-135.41-35.221-186.97-38.774-45.13-91.488-66.333-143.67-66.336l.005.002ZM839.167,309.242c37.818.467,74.161,17.058,99.35,46.375,50.726,59.042,38.469,142.97-14.479,188.25l-50.709-101.09h-61.217l63.783,127.16c-4.445,1.317-9.026,2.425-13.73,3.311-46.749,8.806-94.645-7.996-125.65-44.08-66.798-77.748-24.381-198.65,76.35-217.63,8.766-1.651,17.572-2.403,26.299-2.295h.003Z" fill="#fff"></path><path d="M812.112,442.774h61.217l50.709,101.09c52.948-45.279,65.204-129.21,14.478-188.25-31.001-36.083-78.897-52.887-125.65-44.081-100.73,18.975-143.15,139.88-76.35,217.63,31.001,36.084,78.898,52.887,125.65,44.081,4.705-.886,9.284-1.995,13.729-3.312l-63.783-127.158Z" fill="#ed1b76"></path><path d="M1194.45,609.83c-59.601-34.053-96.398-97.413-96.447-166.05v-192.23h61.216v192.23h-.043c.112,100.13,108.53,162.7,195.3,112.63,40.272-23.238,65.081-66.173,65.136-112.63h-.043V0h61.216v443.52c.134,146.9-158.62,239.28-286.34,166.31h.005Z" fill="#fff"></path><rect x="1571.77" y="251.55" width="61.216" height="382.78" fill="#fff"></rect><path d="M1730.78,251.56v383.49h293.93v-.035c67.275-1.281,129.06-37.899,162.53-96.59,72.804-127.66-18.992-286.29-165.32-286.87h-291.137l-.003.005ZM1791.997,312.775h228.45v.072c46.743-.21,90.011,24.694,113.37,65.254,50.101,86.986-12.575,195.69-112.82,195.66v.068h-229.01v-261.06l.01.005Z" fill="#fff"></path><path d="M2960.513,859.563l-112.68-224.64h-262.41c-146.91.138-239.28-158.62-166.32-286.34,34.014-59.535,97.27-96.317,165.82-96.447l.02-.04h318.41l-30.723,61.249h-290.52c-98.351,2.279-159.15,109.38-109.59,195.27,23.238,40.272,66.174,65.082,112.63,65.137v-.044h231.97l-48.957-97.598h-197.2v-61.216h166.5l-.01-.019h61.218l223.06,444.69-61.218-.002Z" fill="#fff"></path><path d="M3146.433,252.123l-187.16,382.78h68.283l118.88-243.13,118.88,243.13h68.287l-187.17-382.78Z" fill="#fff"></path><path d="M3146.433,391.773l118.88,243.13h-237.76l118.88-243.13Z" fill="#ed1b76"></path><path d="M3787.123,634.863v-260.7l-130.79,260.73h-61.218l.009-.018h-.225l-130.78-260.72v260.74h-61.216V252.115l-.011-.022h61.217l.006.012h.004v.008l161.5,321.96,161.5-321.96v-.045h61.216v382.78l-61.212.015Z" fill="#fff"></path><path d="M4327.323,252.123v61.216h-321.57v260.32h321.57v61.216h-382.78V252.095h61.216v.037l321.564-.009Z" fill="#fff"></path><rect x="4005.723" y="313.333" width="321.57" height="260.32" fill="#ed1b76"></rect><path d="M4526.923,476.053h-372.3v-64.8h407.9l-35.6,64.8Z" fill="#fff"></path><path d="M4859.723,570.293h-290.5l-32.8,64.8h333.1c51.9-18.2,87.4-62.5,88.3-110,.9-40.4-22.6-69.2-30.2-77.6v-8.9c4.4-5.3,37.3-43.9,27.5-94.9-8.4-46.1-47.9-82.9-98.5-91.4h-278.5l28.8,61.7h232c29.7,3.5,52.8,17.3,55.4,44.4,2.7,25.7-15.5,50.1-41.7,54.6h-195.2l-28.8,61.7h228.4c19.1,5.3,33.7,19.5,37.3,37.3,4.9,23.5-9.3,49.2-35.5,59" fill="#ed1b76"></path><g><path d="M5063.803,635.328c-13.15,0-24.413-4.679-33.771-14.046-9.368-9.359-14.047-20.621-14.047-33.771s4.679-24.404,14.047-33.771c9.358-9.358,20.621-14.046,33.771-14.046s24.403,4.688,33.77,14.046c9.359,9.367,14.047,20.621,14.047,33.771s-4.688,24.412-14.047,33.771c-9.367,9.367-20.621,14.046-33.77,14.046Z" fill="#fff"></path><path d="M5379.396,635.328c-53.001,0-98.128-18.622-135.382-55.886-37.263-37.254-55.886-82.382-55.886-135.382s18.623-98.118,55.886-135.382c37.255-37.254,82.382-55.886,135.382-55.886s98.118,18.633,135.382,55.886c37.255,37.264,55.886,82.392,55.886,135.382s-18.632,98.129-55.886,135.382c-37.264,37.264-82.391,55.886-135.382,55.886ZM5379.396,558.82c31.876,0,58.969-11.151,81.289-33.472,22.312-22.311,33.472-49.404,33.472-81.289s-11.16-58.968-33.472-81.289c-22.32-22.311-49.413-33.472-81.289-33.472s-58.977,11.161-81.289,33.472c-22.321,22.321-33.472,49.415-33.472,81.289s11.151,58.978,33.472,81.289c22.312,22.321,49.405,33.472,81.289,33.472Z" fill="#ed1b76"></path></g></svg>
+                 </div>
+            </div>
         </div>
-      </div>
-      <div class="copy-right">
-        <div class="container">
-          <p>Copyright&#169;2021 Asha</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        <script src="indexl.js"></script>
+    </body>
 </html>

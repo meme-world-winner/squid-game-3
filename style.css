@@ -1,0 +1,311 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 20px #ff1b7b;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* 自定义滚动条样式 */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ff1b7b;
+    border-radius: 5px;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#background,
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bgVideo {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.social-buttons-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ff1b7b;
+    box-shadow: 0 0 10px #ff1b7b;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.social-icon-wrapper:hover .social-icon {
+    transform: scale(1.1);
+}
+
+.social-icon-wrapper:hover {
+    background-color: #ff1b7b;
+    box-shadow: 0 0 20px #ff1b7b;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        justify-content: flex-start;
+    }
+
+    .content-wrapper {
+        padding-top: 50px;
+    }
+
+    .social-buttons-container {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+    }
+
+    .social-buttons {
+        justify-content: space-around;
+        padding: 0 15px;
+    }
+
+    .social-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.description-section {
+    background-color: #000;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.glowing-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 10px #ff1b7b, 0 0 20px #ff1b7b, 0 0 30px #ff1b7b;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glowing-title span {
+    display: block;
+}
+
+.description-text {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .glowing-title {
+        font-size: 28px;
+    }
+
+    .description-text {
+        font-size: 16px;
+    }
+}
+
+.main-content {
+    position: relative;
+    min-height: 100vh;
+}
+
+.footer-section {
+    background-color: #000;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.tokenomics-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 10px #ff1b7b, 0 0 20px #ff1b7b;
+    margin-bottom: 20px;
+}
+
+.decentralized-text {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.contract-address {
+    margin-bottom: 30px;
+}
+
+.contract-address p {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.address {
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.start-game-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #ff1b7b;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ff1b7b;
+}
+
+.start-game-button:hover {
+    background-color: #ff1b7b;
+    box-shadow: 0 0 20px #ff1b7b;
+}
+
+.logo-container {
+    margin-top: 200px;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .tokenomics-title {
+        font-size: 28px;
+    }
+
+    .decentralized-text {
+        font-size: 16px;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .start-game-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        max-width: 180px;
+    }
+}
