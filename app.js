@@ -136,12 +136,13 @@ function openImageModal(src, alt) {
                     ✕
                 </button>
                 <img src="${src}" alt="${alt}" class="max-w-full max-h-full object-contain rounded-lg" onclick="event.stopPropagation()">
-                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 class="text-white text-xl font-orbitron font-bold">${alt}</h3>
-                </div>
             </div>
         </div>
     `;
+
+    // <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+    //                 <h3 class="text-white text-xl font-orbitron font-bold">${alt}</h3>
+    //             </div>
     
     document.body.insertAdjacentHTML('beforeend', modalHtml);
     document.body.style.overflow = 'hidden';
