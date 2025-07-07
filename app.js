@@ -165,6 +165,7 @@ function initVideoModal() {
             if (img) {
                 const videoId = extractYouTubeVideoId(img.src);
                 const title = this.querySelector('h3').textContent;
+                console.log(videoId,title);
                 if (videoId) {
                     openVideoModal(videoId, title);
                 }
